@@ -1,0 +1,38 @@
+name: Deploy Dokka Docs
+
+on:
+  push:
+    tags:
+      - '*'
+permissions:
+  contents: write
+
+jobs:
+  deploy-docs:
+    if: github.repository == 'demoofbug/kplist'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: 17
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v3
+
+      - name: Build Dokka docs
+        run: ./gradlew --no-daemon --stacktrace --info :kplist:dokkaGeneratePublicationHtml
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./kplist/build/dokka/html
+          publish_branch: gh-pages
+          user_name: github-actions
+          user_email: github-actions@github.com
