@@ -8,14 +8,7 @@ repositories {
 
 kotlin {
     jvm()
-    macosX64 {
-        binaries {
-            executable {
-                baseName = "plist"
-                entryPoint = "com.getiox.kplist.main"
-            }
-        }
-    }
+    macosX64()
     macosArm64()
     linuxX64()
     linuxArm64()
