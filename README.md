@@ -65,7 +65,7 @@ repositories {
 }
 
 dependencies {
-    implementation("com.getiox:kplist:0.0.1")
+    implementation("com.getiox.plist:plist:0.0.2")
 }
 ```
 
@@ -78,9 +78,9 @@ dependencies {
 
 ```xml
 <dependency>
-    <groupId>com.getiox</groupId>
-    <artifactId>kplist-jvm</artifactId>
-    <version>0.0.1</version>
+    <groupId>com.getiox.plist</groupId>
+    <artifactId>plist-jvm</artifactId>
+    <version>0.0.2</version>
 </dependency>
 ```
 
@@ -133,7 +133,8 @@ if (decoded.isDict) {
 <summary>Java encode/decode</summary>
 
 ```java
-import com.getiox.kplist.*;
+import com.getiox.plist.*;
+
 import java.util.List;
 import java.util.Map;
 
@@ -159,14 +160,21 @@ byte[] binaryData = PList.encode(root, PListFormat.BINARY);
 byte[] xmlData = PList.encode(root, PListFormat.XML);
 PListValue decoded = PList.decode(binaryData);
 
-if (decoded instanceof PListDict dict) {
-    PListValue stringValue = dict.get("stringKey");
-    PListValue intValue = dict.get("intKey");
+if(decoded instanceof
+PListDict dict){
+PListValue stringValue = dict.get("stringKey");
+PListValue intValue = dict.get("intKey");
 
-    if (stringValue instanceof PListString str && intValue instanceof PListInt num) {
-        System.out.println("String value: " + str.getValue() + ", Int value: " + num.getValue());
+    if(stringValue instanceof
+PListString str &&intValue instanceof
+PListInt num){
+    System.out.
+
+println("String value: "+str.getValue() +", Int value: "+num.
+
+getValue());
     }
-}
+    }
 ```
 
 </details>

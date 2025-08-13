@@ -1,7 +1,7 @@
-package com.getiox.kplist
+package com.getiox.plist
 
-import com.getiox.kplist.internal.decodeXml
-import com.getiox.kplist.internal.encodeXml
+import com.getiox.plist.internal.decodeXml
+import com.getiox.plist.internal.encodeXml
 import kotlinx.datetime.Instant
 import kotlin.test.Test
 import kotlin.test.assertEquals

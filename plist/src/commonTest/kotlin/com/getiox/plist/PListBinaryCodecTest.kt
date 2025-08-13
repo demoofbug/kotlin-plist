@@ -1,7 +1,7 @@
-package com.getiox.kplist
+package com.getiox.plist
 
-import com.getiox.kplist.internal.decodeBinary
-import com.getiox.kplist.internal.encodeBinary
+import com.getiox.plist.internal.decodeBinary
+import com.getiox.plist.internal.encodeBinary
 import kotlinx.datetime.Instant
 import kotlin.test.Test
 import kotlin.test.assertEquals

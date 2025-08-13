@@ -1,4 +1,4 @@
-package com.getiox.kplist
+package com.getiox.plist
 
 import kotlinx.datetime.Clock
 import kotlinx.io.buffered

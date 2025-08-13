@@ -1,6 +1,6 @@
-package com.getiox.kplist.internal
+package com.getiox.plist.internal
 
-import com.getiox.kplist.*
+import com.getiox.plist.*
 import kotlinx.datetime.Instant
 import kotlin.jvm.JvmSynthetic
 

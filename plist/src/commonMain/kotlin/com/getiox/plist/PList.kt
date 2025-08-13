@@ -1,9 +1,9 @@
-package com.getiox.kplist
+package com.getiox.plist
 
-import com.getiox.kplist.internal.decodeBinary
-import com.getiox.kplist.internal.decodeXml
-import com.getiox.kplist.internal.encodeBinary
-import com.getiox.kplist.internal.encodeXml
+import com.getiox.plist.internal.decodeBinary
+import com.getiox.plist.internal.decodeXml
+import com.getiox.plist.internal.encodeBinary
+import com.getiox.plist.internal.encodeXml
 import kotlin.jvm.JvmStatic
 
 enum class PListFormat {

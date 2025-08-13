@@ -12,7 +12,7 @@ Badges: `[UPDATED]`, `[FIXED]`, `[NEW]`, `[DEPRECATED]`, `[REMOVED]`, `[BREAKING
 
 **Initial release of `kplist` – a Kotlin Multiplatform library for parsing Apple plist files.**
 
-### [NEW]
+### [New]
 
 - Added support for parsing **XML** and **Binary** (bplist00) plist formats.
 - Provided a unified API: `PList.encode(...)` and `PList.decode(...)`.
@@ -37,12 +37,11 @@ Badges: `[UPDATED]`, `[FIXED]`, `[NEW]`, `[DEPRECATED]`, `[REMOVED]`, `[BREAKING
 
 - Initial Java-friendly API (`PListDict`, `PListArray`, etc.) to support usage in pure Java projects.
 
-## [0.0.2]()  
-restructure project directory layout  
+## [0.0.2]()
+### Refactor
+- Rename project from `kplist` to `kotlin-plist`
+- Rename `lib` directory to `plist` and update file paths
+- Update package from `com.getiox.kplist` to `com.getiox.plist`
+- No functional changes; only reorganized files and standardized package naming
 
-### [REFACTOR]  
-- Rename project from kplist to kotlin-plist to standardize naming
-- Rename the lib directory to plist to standardize the project structure
-- Update all related file paths to match the new directory layout  
-- This refactoring does not affect functionality; it only reorganizes files
 

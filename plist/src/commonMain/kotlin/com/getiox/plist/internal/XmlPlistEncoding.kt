@@ -1,6 +1,6 @@
-package com.getiox.kplist.internal
+package com.getiox.plist.internal
 
-import com.getiox.kplist.*
+import com.getiox.plist.*
 import kotlinx.datetime.Instant
 import nl.adaptivity.xmlutil.EventType.*
 import nl.adaptivity.xmlutil.XmlWriter

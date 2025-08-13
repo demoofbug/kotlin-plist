@@ -1,4 +1,4 @@
-package com.getiox.kplist
+package com.getiox.plist
 
 import kotlinx.datetime.Instant
 import kotlin.jvm.JvmSynthetic
