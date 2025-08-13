@@ -1,6 +1,6 @@
-# kplist
+# kotlin-plist
 
-![Maven Central](https://img.shields.io/maven-metadata/v.svg?label=maven-central&metadataUrl=https://repo1.maven.org/maven2/com/getiox/kplist/maven-metadata.xml&style=for-the-badge)
+![Maven Central](https://img.shields.io/maven-metadata/v.svg?label=maven-central&metadataUrl=https://repo1.maven.org/maven2/com/getiox/plist/plist/maven-metadata.xml&style=for-the-badge)
 ![Kotlin Multiplatform](https://img.shields.io/badge/Kotlin-Multiplatform-green.svg?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-Mit-green.svg?style=for-the-badge)
 
@@ -185,10 +185,10 @@ getValue());
 
 ## Samples
 
-Explore example projects to see how `kplist` is used in real applications:
+Explore example projects to see how `kotlin-plist` is used in real applications:
 
-- [`kplist-java`](https://github.com/demoofbug/kplist/tree/main/samples/kplist-java): A Java-based sample showing how to read and write plist files in both XML and binary formats.
-- [`kplist-kotlin-multiplatform`](https://github.com/demoofbug/kplist/tree/main/samples/kplist-kotlin-multiplatform): A full-stack Kotlin Multiplatform sample covering JVM, Android, iOS, and Native platforms.
+- [`java`](https://github.com/demoofbug/kotlin-plist/tree/main/samples/java): A Java-based sample showing how to read and write plist files in both XML and binary formats.
+- [`kotlin-multiplatform`](https://github.com/demoofbug/kotlin-plist/tree/main/samples/kmp): A full-stack Kotlin Multiplatform sample covering JVM, Android, iOS, and Native platforms.
 
 
 

@@ -10,7 +10,7 @@ Badges: `[UPDATED]`, `[FIXED]`, `[NEW]`, `[DEPRECATED]`, `[REMOVED]`, `[BREAKING
 
 ## [0.0.1]()
 
-**Initial release of `kplist` – a Kotlin Multiplatform library for parsing Apple plist files.**
+**Initial release of `kotlin-plist` – a Kotlin Multiplatform library for parsing Apple plist files.**
 
 ### [New]
 

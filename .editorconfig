@@ -14,7 +14,7 @@ indent_size = 2
 
 [*.{kt,kts}]
 ij_kotlin_code_style_defaults = KOTLIN_OFFICIAL
-#ij_kotlin_packages_to_use_import_on_demand = com.getiox.kplist.*, nl.adaptivity.xmlutil.EventType.*
+#ij_kotlin_packages_to_use_import_on_demand = com.getiox.plist.*, nl.adaptivity.xmlutil.EventType.*
 
 ktlint_code_style = intellij_idea
 ktlint_standard_annotation = disabled
