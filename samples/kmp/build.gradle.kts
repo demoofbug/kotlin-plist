@@ -17,7 +17,7 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                implementation(project(":kplist"))
+                implementation(project(":plist"))
                 implementation(libs.kotlinx.io)
             }
         }

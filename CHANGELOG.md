@@ -14,9 +14,9 @@ Badges: `[UPDATED]`, `[FIXED]`, `[NEW]`, `[DEPRECATED]`, `[REMOVED]`, `[BREAKING
 
 ### [NEW]
 
-- [NEW] Added support for parsing **XML** and **Binary** (bplist00) plist formats.
-- [NEW] Provided a unified API: `PList.encode(...)` and `PList.decode(...)`.
-- [NEW] Supported all standard plist value types:
+- Added support for parsing **XML** and **Binary** (bplist00) plist formats.
+- Provided a unified API: `PList.encode(...)` and `PList.decode(...)`.
+- Supported all standard plist value types:
     - Dictionary (`PListDict`)
     - Array (`PListArray`)
     - String (`PListString`)
@@ -26,13 +26,23 @@ Badges: `[UPDATED]`, `[FIXED]`, `[NEW]`, `[DEPRECATED]`, `[REMOVED]`, `[BREAKING
     - Date (`PListDate`)
     - Data (`PListData`)
     - Null (`PListNull`)
-- [NEW] Enabled multiplatform support:
+- Enabled multiplatform support:
     - **JVM**, **Android**, **iOS**, **macOS**, **Windows**, **Linux**, and **JavaScript**.
-- [NEW] Added Kotlin DSL extensions for building plist trees.
-- [NEW] Provided type-safe accessors (e.g., `.string`, `.int`, `.data`, etc.).
-- [NEW] Included `plistValue` extension properties for primitive types (Kotlin only).
-- [NEW] Auto-detects format when decoding.
+- Added Kotlin DSL extensions for building plist trees.
+- Provided type-safe accessors (e.g., `.string`, `.int`, `.data`, etc.).
+- Included `plistValue` extension properties for primitive types (Kotlin only).
+- Auto-detects format when decoding.
 
 ### [Experimental]
 
-- [Experimental] Initial Java-friendly API (`PListDict`, `PListArray`, etc.) to support usage in pure Java projects.
+- Initial Java-friendly API (`PListDict`, `PListArray`, etc.) to support usage in pure Java projects.
+
+## [0.0.2]()  
+restructure project directory layout  
+
+### [REFACTOR]  
+- Rename project from kplist to kotlin-plist to standardize naming
+- Rename the lib directory to plist to standardize the project structure
+- Update all related file paths to match the new directory layout  
+- This refactoring does not affect functionality; it only reorganizes files
+

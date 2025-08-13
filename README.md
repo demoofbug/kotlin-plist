@@ -4,7 +4,7 @@
 ![Kotlin Multiplatform](https://img.shields.io/badge/Kotlin-Multiplatform-green.svg?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-Mit-green.svg?style=for-the-badge)
 
-**kplist** is a Kotlin Multiplatform library for reading and writing Apple's plist (XML and binary) files.
+**kotlin-plist** is a Kotlin Multiplatform library for reading and writing Apple's plist (XML and binary) files.
 
 ---
 

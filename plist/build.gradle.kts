@@ -58,7 +58,7 @@ kotlin {
     }
 }
 android {
-    namespace = "com.getiox.kplist"
+    namespace =  project.group.toString()
     compileSdk = libs.versions.android.compileSdk.get().toInt()
     defaultConfig {
         minSdk = libs.versions.android.minSdk.get().toInt()
@@ -87,11 +87,11 @@ mavenPublishing {
     pom {
         name = project.name
         description = "Multiplatform Kotlin library for Apple plist (Property List) serialization."
-        url = "https://github.com/demoofbug/kplist"
+        url = "https://github.com/demoofbug/kotlin-plist"
         licenses {
             license {
                 name = "The MIT License"
-                url = "https://github.com/demoofbug/kplist/blob/master/LICENSE"
+                url = "https://github.com/demoofbug/kotlin-plist/blob/master/LICENSE"
             }
         }
         developers {
@@ -101,9 +101,9 @@ mavenPublishing {
             }
         }
         scm {
-            url = "https://github.com/demoofbug/kplist"
-            connection = "scm:git:git://github.com/demoofbug/kplist.git"
-            developerConnection = "scm:git:ssh://github.com/demoofbug/kplist.git"
+            url = "https://github.com/demoofbug/kotlin-plist"
+            connection = "scm:git:git://github.com/demoofbug/kotlin-plist.git"
+            developerConnection = "scm:git:ssh://github.com/demoofbug/kotlin-plist.git"
         }
     }
 }

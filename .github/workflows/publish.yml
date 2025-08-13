@@ -16,9 +16,9 @@ jobs:
           distribution: 'zulu'
           java-version: 17
       - name: Build & Test
-        run: ./gradlew --no-daemon --stacktrace --no-configuration-cache :kplist:build
+        run: ./gradlew --no-daemon --stacktrace --no-configuration-cache :plist:build
       - name: Publish to MavenCentral
-        run: ./gradlew --no-daemon --stacktrace --no-configuration-cache :kplist:publishToMavenCentral
+        run: ./gradlew --no-daemon --stacktrace --no-configuration-cache :plist:publishToMavenCentral
         env:
           ORG_GRADLE_PROJECT_mavenCentralUsername: ${{ secrets.MAVEN_CENTRAL_USERNAME }}
           ORG_GRADLE_PROJECT_mavenCentralPassword: ${{ secrets.MAVEN_CENTRAL_PASSWORD }}

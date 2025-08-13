@@ -16,8 +16,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "kplist-project"
-include(":lib")
-project(":lib").name = "kplist"
-include("samples:kplist-java")
-include("samples:kplist-kotlin-multiplatform")
+rootProject.name = "kotlin-plist"
+include(":plist")
+include("samples:java")
+include("samples:kmp")
