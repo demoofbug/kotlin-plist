@@ -96,7 +96,7 @@ dependencies {
 <summary>Kotlin encode/decode</summary>
 
 ```kotlin
-import com.getiox.kplist.*
+import com.getiox.plist.*
 import kotlinx.datetime.Clock
 
 val plistValue = mapOf(
