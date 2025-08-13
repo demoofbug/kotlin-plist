@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>PListNull</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+            <a class="library-name--link" href="../../../index.html">
+                    plist
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+0.0.2        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active=""
+                        data-filter=":plist/commonMain">common</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option common-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":plist/commonMain"
+                                       data-filter=":plist/commonMain"/>
+                                <span class="checkbox--icon"></span>
+                                common
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                        data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    plist
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="plist::com.getiox.plist/PListNull///PointingToDeclaration//581570503">
+  <div class="breadcrumbs"><a href="../../../index.html">plist</a><span class="delimiter">/</span><a href="../index.html">com.getiox.plist</a><span class="delimiter">/</span><span class="current">PListNull</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>PList</span><wbr></wbr><span><span>Null</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":plist/commonMain"><div class="symbol monospace"><span class="token keyword">object </span><a href="index.html">PListNull</a> : <a href="../-p-list-value/index.html">PListValue</a></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button><button class="section-tab" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION,EXTENSION_PROPERTY,EXTENSION_FUNCTION">Members &amp; Extensions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="EXTENSION_PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="1896283799%2FProperties%2F581570503" anchor-label="array" id="1896283799%2FProperties%2F581570503" data-filterable-set=":plist/commonMain"></a>
+          <div class="table-row" data-filterable-current=":plist/commonMain" data-filterable-set=":plist/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../array.html"><span><span>array</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1896283799%2FProperties%2F581570503"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":plist/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="../-p-list-value/index.html">PListValue</a><span class="token punctuation">.</span><a href="../array.html">array</a><span class="token operator">: </span><a href="../-p-list-array/index.html">PListArray</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1653332634%2FProperties%2F581570503" anchor-label="bool" id="1653332634%2FProperties%2F581570503" data-filterable-set=":plist/commonMain"></a>
+          <div class="table-row" data-filterable-current=":plist/commonMain" data-filterable-set=":plist/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../bool.html"><span><span>bool</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1653332634%2FProperties%2F581570503"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":plist/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="../-p-list-value/index.html">PListValue</a><span class="token punctuation">.</span><a href="../bool.html">bool</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1822445734%2FProperties%2F581570503" anchor-label="data" id="-1822445734%2FProperties%2F581570503" data-filterable-set=":plist/commonMain"></a>
+          <div class="table-row" data-filterable-current=":plist/commonMain" data-filterable-set=":plist/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../data.html"><span><span>data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1822445734%2FProperties%2F581570503"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":plist/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="../-p-list-value/index.html">PListValue</a><span class="token punctuation">.</span><a href="../data.html">data</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/index.html">ByteArray</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-934644386%2FProperties%2F581570503" anchor-label="date" id="-934644386%2FProperties%2F581570503" data-filterable-set=":plist/commonMain"></a>
+          <div class="table-row" data-filterable-current=":plist/commonMain" data-filterable-set=":plist/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../date.html"><span><span>date</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-934644386%2FProperties%2F581570503"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":plist/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="../-p-list-value/index.html">PListValue</a><span class="token punctuation">.</span><a href="../date.html">date</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.datetime/Instant///PointingToDeclaration/">Instant</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1651892890%2FProperties%2F581570503" anchor-label="dict" id="-1651892890%2FProperties%2F581570503" data-filterable-set=":plist/commonMain"></a>
+          <div class="table-row" data-filterable-current=":plist/commonMain" data-filterable-set=":plist/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../dict.html"><span><span>dict</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1651892890%2FProperties%2F581570503"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":plist/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="../-p-list-value/index.html">PListValue</a><span class="token punctuation">.</span><a href="../dict.html">dict</a><span class="token operator">: </span><a href="../-p-list-dict/index.html">PListDict</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="230006509%2FProperties%2F581570503" anchor-label="int" id="230006509%2FProperties%2F581570503" data-filterable-set=":plist/commonMain"></a>
+          <div class="table-row" data-filterable-current=":plist/commonMain" data-filterable-set=":plist/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../int.html"><span><span>int</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="230006509%2FProperties%2F581570503"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":plist/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="../-p-list-value/index.html">PListValue</a><span class="token punctuation">.</span><a href="../int.html">int</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1803439411%2FProperties%2F581570503" anchor-label="isArray" id="-1803439411%2FProperties%2F581570503" data-filterable-set=":plist/commonMain"></a>
+          <div class="table-row" data-filterable-current=":plist/commonMain" data-filterable-set=":plist/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../is-array.html"><span>is</span><wbr></wbr><span><span>Array</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1803439411%2FProperties%2F581570503"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":plist/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="../-p-list-value/index.html">PListValue</a><span class="token punctuation">.</span><a href="../is-array.html">isArray</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1533986724%2FProperties%2F581570503" anchor-label="isBool" id="1533986724%2FProperties%2F581570503" data-filterable-set=":plist/commonMain"></a>
+          <div class="table-row" data-filterable-current=":plist/commonMain" data-filterable-set=":plist/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../is-bool.html"><span>is</span><wbr></wbr><span><span>Bool</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1533986724%2FProperties%2F581570503"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":plist/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="../-p-list-value/index.html">PListValue</a><span class="token punctuation">.</span><a href="../is-bool.html">isBool</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1941791644%2FProperties%2F581570503" anchor-label="isData" id="-1941791644%2FProperties%2F581570503" data-filterable-set=":plist/commonMain"></a>
+          <div class="table-row" data-filterable-current=":plist/commonMain" data-filterable-set=":plist/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../is-data.html"><span>is</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1941791644%2FProperties%2F581570503"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":plist/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="../-p-list-value/index.html">PListValue</a><span class="token punctuation">.</span><a href="../is-data.html">isData</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1053990296%2FProperties%2F581570503" anchor-label="isDate" id="-1053990296%2FProperties%2F581570503" data-filterable-set=":plist/commonMain"></a>
+          <div class="table-row" data-filterable-current=":plist/commonMain" data-filterable-set=":plist/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../is-date.html"><span>is</span><wbr></wbr><span><span>Date</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1053990296%2FProperties%2F581570503"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":plist/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="../-p-list-value/index.html">PListValue</a><span class="token punctuation">.</span><a href="../is-date.html">isDate</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1771238800%2FProperties%2F581570503" anchor-label="isDict" id="-1771238800%2FProperties%2F581570503" data-filterable-set=":plist/commonMain"></a>
+          <div class="table-row" data-filterable-current=":plist/commonMain" data-filterable-set=":plist/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../is-dict.html"><span>is</span><wbr></wbr><span><span>Dict</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1771238800%2FProperties%2F581570503"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":plist/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="../-p-list-value/index.html">PListValue</a><span class="token punctuation">.</span><a href="../is-dict.html">isDict</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1852053341%2FProperties%2F581570503" anchor-label="isInt" id="-1852053341%2FProperties%2F581570503" data-filterable-set=":plist/commonMain"></a>
+          <div class="table-row" data-filterable-current=":plist/commonMain" data-filterable-set=":plist/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../is-int.html"><span>is</span><wbr></wbr><span><span>Int</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1852053341%2FProperties%2F581570503"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":plist/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="../-p-list-value/index.html">PListValue</a><span class="token punctuation">.</span><a href="../is-int.html">isInt</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="329395649%2FProperties%2F581570503" anchor-label="isNull" id="329395649%2FProperties%2F581570503" data-filterable-set=":plist/commonMain"></a>
+          <div class="table-row" data-filterable-current=":plist/commonMain" data-filterable-set=":plist/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../is-null.html"><span>is</span><wbr></wbr><span><span>Null</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="329395649%2FProperties%2F581570503"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":plist/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="../-p-list-value/index.html">PListValue</a><span class="token punctuation">.</span><a href="../is-null.html">isNull</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1678226520%2FProperties%2F581570503" anchor-label="isReal" id="1678226520%2FProperties%2F581570503" data-filterable-set=":plist/commonMain"></a>
+          <div class="table-row" data-filterable-current=":plist/commonMain" data-filterable-set=":plist/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../is-real.html"><span>is</span><wbr></wbr><span><span>Real</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1678226520%2FProperties%2F581570503"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":plist/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="../-p-list-value/index.html">PListValue</a><span class="token punctuation">.</span><a href="../is-real.html">isReal</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1273618805%2FProperties%2F581570503" anchor-label="isString" id="-1273618805%2FProperties%2F581570503" data-filterable-set=":plist/commonMain"></a>
+          <div class="table-row" data-filterable-current=":plist/commonMain" data-filterable-set=":plist/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../is-string.html"><span>is</span><wbr></wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1273618805%2FProperties%2F581570503"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":plist/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="../-p-list-value/index.html">PListValue</a><span class="token punctuation">.</span><a href="../is-string.html">isString</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1797572430%2FProperties%2F581570503" anchor-label="real" id="1797572430%2FProperties%2F581570503" data-filterable-set=":plist/commonMain"></a>
+          <div class="table-row" data-filterable-current=":plist/commonMain" data-filterable-set=":plist/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../real.html"><span><span>real</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1797572430%2FProperties%2F581570503"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":plist/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="../-p-list-value/index.html">PListValue</a><span class="token punctuation">.</span><a href="../real.html">real</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1748651009%2FProperties%2F581570503" anchor-label="string" id="1748651009%2FProperties%2F581570503" data-filterable-set=":plist/commonMain"></a>
+          <div class="table-row" data-filterable-current=":plist/commonMain" data-filterable-set=":plist/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../string.html"><span><span>string</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1748651009%2FProperties%2F581570503"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":plist/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="../-p-list-value/index.html">PListValue</a><span class="token punctuation">.</span><a href="../string.html">string</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="2022716113%2FFunctions%2F581570503" anchor-label="toString" id="2022716113%2FFunctions%2F581570503" data-filterable-set=":plist/commonMain"></a>
+          <div class="table-row" data-filterable-current=":plist/commonMain" data-filterable-set=":plist/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="to-string.html"><span>to</span><wbr></wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2022716113%2FFunctions%2F581570503"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":plist/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="to-string.html"><span class="token function">toString</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>© 2025 Copyright</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
